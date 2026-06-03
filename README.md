@@ -1,1 +1,183 @@
 # Concurso-AGRINHO
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Agro Forte e Futuro Sustentável</title>
+    
+    <meta name="description" content="Painel interativo do projeto Agro Forte e Futuro Sustentável para o Concurso Agrinho.">
+    <meta name="author" content="Equipe Agrinho">
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="card">
+        
+        <header class="header-projeto">
+            <span class="tag-projeto">Concurso Agrinho</span>
+            <h1>Agro Forte &<br><span class="destaque-titulo">Futuro Sustentável</span></h1>
+            <p class="subtitulo">Inovação no campo, preservação no planeta.</p>
+        </header>
+
+        <section class="painel-pratica" aria-live="informative" aria-atomic="true">
+            <p class="label-painel">Prática Sustentável em Destaque</p>
+            <h2 id="nome-pratica">Rotação de Culturas</h2>
+            <p id="desc-pratica" class="descricao">Melhora a saúde do solo, reduz pragas e evita o esgotamento de nutrientes sem o uso excessivo de químicos.</p>
+        </section>
+
+        <section class="botoes-container">
+            <button id="btn-proxima-pratica" aria-label="Conhecer próxima prática sustentável">
+                Conhecer Outra Prática
+            </button>
+            <button id="btn-apoio" class="btn-secundario" aria-label="Apoiar esta ideia de projeto">
+                🌱 Apoiar Ideia ( <span id="contador-apoio">0</span> )
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f1f8e9 0%, #d7ccc8 100%);
+    padding: 20px;
+}
+
+/* Card Principal */
+.card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(62, 39, 35, 0.1);
+    text-align: center;
+    max-width: 440px;
+    width: 100%;
+    border-top: 8px solid #388e3c;
+}
+
+/* Cabeçalho */
+.tag-projeto {
+    background-color: #8d6e63;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.destaque-titulo {
+    color: #4e342e;
+}
+
+.subtitulo {
+    color: #757575;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Painel de Conteúdo */
+.painel-pratica {
+    background-color: #f9fbe7;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #d4e157;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-painel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9e9d24;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#nome-pratica {
+    color: #1b5e20;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.descricao {
+    color: #5d4037;
+    font-size: 13.5px;
+    line-height: 1.6;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+/* Botões */
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:focus-visible {
+    outline: 3px solid #8d6e63;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#btn-proxima-pratica {
+    background-color: #388e3c;
+    color: white;
+}
+
+#btn-proxima-pratica:hover {
+    background-color: #2e7d32;
+    box-shadow: 0 6px 16px rgba(56, 142, 60, 0.25);
+}
+
+.btn-secundario {
+    background-color: #efebe9;
+    color: #4e342e;
+}
+
+.btn-secundario:hover {
+    background-color: #d7ccc8;
+}
