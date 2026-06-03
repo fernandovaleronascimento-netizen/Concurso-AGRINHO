@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Interativo</title>
+    <title>Projeto: Agro Forte e Futuro Sustentável</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
     <main class="card">
-        <h1>Bem-vindo ao Meu Site!</h1>
-        <p>Este é um exemplo prático de HTML, CSS e JavaScript integrados.</p>
-        
-        <div class="contador-container">
-            <span id="contador">0</span>
-            <p>Cliques acumulados</p>
-        </div>
+        <header class="header-projeto">
+            <div class="tag-projeto">Concurso Agrinho</div>
+            <h1>Agro Forte &<br><span class="destaque-titulo">Futuro Sustentável</span></h1>
+            <p class="subtitulo">Inovação no campo, preservação no planeta.</p>
+        </header>
+
+        <section class="painel-pratica" aria-live="polite">
+            <p class="label-painel">Prática Sustentável em Destaque:</p>
+            <h2 id="nome-pratica">Rotação de Culturas</h2>
+            <p id="desc-pratica" class="descricao">Melhora a saúde do solo, reduz pragas e evita o esgotamento de nutrientes sem o uso excessivo de químicos.</p>
+        </section>
 
         <div class="botoes">
-            <button id="btn-clique">Clique Aqui</button>
-            <button id="btn-cor" class="btn-secundario">Mudar Cor de Fundo</button>
+            <button id="btn-proxima-pratica">Conhecer Outra Prática</button>
+            <button id="btn-apoio" class="btn-secundario">
+                🌱 Apoiar Ideia ( <span id="contador-apoio">0</span> )
+            </button>
         </div>
     </main>
 
