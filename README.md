@@ -181,3 +181,141 @@ button:active {
 .btn-secundario:hover {
     background-color: #d7ccc8;
 }
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f1f8e9 0%, #d7ccc8 100%);
+    padding: 20px;
+}
+
+/* Card Principal */
+.card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(62, 39, 35, 0.1);
+    text-align: center;
+    max-width: 440px;
+    width: 100%;
+    border-top: 8px solid #388e3c; /* Verde Sustentável */
+}
+
+/* Cabeçalho */
+.tag-projeto {
+    background-color: #8d6e63; /* Tom terra */
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.destaque-titulo {
+    color: #4e342e; /* Contraste do Agro Forte */
+}
+
+.subtitulo {
+    color: #757575;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Painel de Conteúdo */
+.painel-pratica {
+    background-color: #f9fbe7;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #d4e157;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-painel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9e9d24;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#nome-pratica {
+    color: #1b5e20;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s ease;
+}
+
+.descricao {
+    color: #5d4037;
+    font-size: 13.5px;
+    line-height: 1.6;
+    transition: opacity 0.2s ease;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:focus-visible {
+    outline: 3px solid #8d6e63;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#btn-proxima-pratica {
+    background-color: #388e3c;
+    color: white;
+}
+
+#btn-proxima-pratica:hover {
+    background-color: #2e7d32;
+    box-shadow: 0 6px 16px rgba(56, 142, 60, 0.25);
+}
+
+.btn-secundario {
+    background-color: #efebe9;
+    color: #4e342e;
+}
+
+.btn-secundario:hover {
+    background-color: #d7ccc8;
+}
